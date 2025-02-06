@@ -12,7 +12,7 @@ O dashboard foi exportado para PowerPoint, onde os gráficos e visualizações p
 [![Baixar PowerPoint com Dashboard](https://img.shields.io/badge/Download-PowerPoint-blue?style=for-the-badge)](https://raw.githubusercontent.com/rfaelvitor/portfolio/69b19397cc7420369c50e801adbc4f56c8af393c/Dashboard%20Financeiro%20Pessoal%20-%20C%C3%B3pia%20compartilh%C3%A1vel.pptx)
 
 ### 🖼️ Preview
-![Preview do Dashboard](<img src="https://raw.githubusercontent.com/rfaelvitor/portfolio/ae7f29ee3fa8940b5b786720275ba7568385543a/Foto_dashboard.jpg" width="500" height="auto" />)
+![Preview do Dashboard](https://raw.githubusercontent.com/rfaelvitor/portfolio/ae7f29ee3fa8940b5b786720275ba7568385543a/Foto_dashboard.jpg)
 
 ### 🔗 Links
 

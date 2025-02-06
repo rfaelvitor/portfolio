@@ -26,7 +26,7 @@ O dashboard foi exportado para PowerPoint, onde os gráficos e visualizações p
 [![Baixar PowerPoint com Dashboard](https://img.shields.io/badge/Download-PowerPoint-blue?style=for-the-badge)](https://raw.githubusercontent.com/rfaelvitor/portfolio/55260687ddf4d19db1f5a2ff03c033ecb5f748b5/Dashboard%20Controle%20dos%20Cursos%20Empresariais%20-%20C%C3%B3pia%20compartilh%C3%A1vel.pptx)
 
 ### 🖼️ Preview
-![Preview do Dashboard](https://raw.githubusercontent.com/rfaelvitor/portfolio/ae7f29ee3fa8940b5b786720275ba7568385543a/Foto_dashboard_empresa.jpg)
+![Preview do Dashboard](https://raw.githubusercontent.com/rfaelvitor/portfolio/79346a4c0b8500a17c9bf8fb07c6eb42d5ec162b/Foto_dashboard_empresa.jpg)
 
 **Observação**: Os valores apresentados no dashboard são fictícios e foram criados para fins demonstrativos. Eles não representam dados reais.
 

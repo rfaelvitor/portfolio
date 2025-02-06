@@ -45,7 +45,7 @@ header a {
 .first-box {
     height: 100vh;
     width: 100vw;
-    background-image: radial-gradient(circle at 9.06% 21.33%, #00547b 0, #021826 50%, #000000 100%);;
+    background-image: radial-gradient(circle at 9.06% 21.33%, #00547b 0, #021826 50%, #000000 100%);
     font-size: 2rem;
     display: flex;
     align-items: center;

@@ -42,8 +42,21 @@ Clique no link abaixo para acessar o projeto:
 [Ver o Projeto Gerador de Imagens e Textos](https://link-do-seu-projeto.com)
 
 ### 🖼️ Preview
-
 ![Preview do Projeto de IA](https://raw.githubusercontent.com/rfaelvitor/portfolio/ae7f29ee3fa8940b5b786720275ba7568385543a/Foto_ia_preview.jpg)
+
+---
+
+## 🔒 Projeto 4: Página de Login
+
+Este projeto consiste em uma **página de login** simples, criada utilizando **HTML** e **CSS**. O foco foi na criação de uma interface limpa e funcional para login de usuários.
+
+### 🖥️ Visualização
+Acesse a página de login abaixo:
+
+[Ver o Projeto Página de Login](https://link-do-seu-projeto.com)
+
+### 🖼️ Preview
+![Preview da Página de Login](https://raw.githubusercontent.com/rfaelvitor/portfolio/ae7f29ee3fa8940b5b786720275ba7568385543a/Foto_login_preview.jpg)
 
 ---
 

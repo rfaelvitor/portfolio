@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: var(--secundary);
+}
+
+:root {
+    --main: #031926;
+    --secundary: #75DDDD;
+}
+
+.container {
+    height: 500vh;
+    width: 100vw;
+    background-color: var(--main);
+}
+
+header {
+    display: flex;
+    height: 1%;
+    align-items: center;
+}
+
+header a:first-child {
+    margin-left: 40%;
+}
+
+header a:last-child {
+    margin-right: 20%;
+}
+
+header a {
+    margin-left: auto;
+    list-style: none;
+}
+
+
+
+.first-box {
+    height: 100vh;
+    width: 100vw;
+    background-image: radial-gradient(circle at 9.06% 21.33%, #00547b 0, #021826 50%, #000000 100%);;
+    font-size: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid white; */
+}
+
+.first-box-left {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid red; */
+}
+
+.first-box-left > p {
+    margin: 2%;
+    
+}
+
+
+
+#software {
+    text-shadow: 0 0 5px #4d9e9e, 0 0 10px #4d9e9e, 0 0 15px #4d9e9e;
+}
+
+.first-box-right {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* border: 2px solid green; */
+}
+
+
+button {
+    height: 5vh;
+    width: 10vw;
+    background-color: transparent;
+    border-radius: 5px;
+    margin: 10px;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--secundary);
+    color: var(--main);
+}
+
+a {
+    text-decoration: none;
+}
+
+.imagem-apresentacao {
+    height: 70%;
+    width: 80%;
+    border-radius: 20%;
+}
+
+@keyframes subir-e-descer {
+    0% {
+        transform: rotate(90deg) translateX(0);
+    }
+    100% {
+        transform: rotate(90deg) translateX(-10px);
+    }
+}
+
+.seta {
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 90%;
+    animation: subir-e-descer 1s infinite alternate ease-in-out;
+}
+
+hr {
+    width: 70%;
+    margin: 2%;
+}

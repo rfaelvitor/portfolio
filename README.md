@@ -1,6 +1,6 @@
 # Meu Portfólio de Projetos
 
-## 🖥️ Projeto 1: Dashboard Interativo
+## 🖥️ Projeto 1: Dashboard Financeiro Pessoal
 
 Esse projeto consiste na criação de um **dashboard interativo**, utilizando **Power BI**, e exportado para PowerPoint.
 
@@ -12,6 +12,8 @@ O dashboard foi exportado para PowerPoint, onde os gráficos e visualizações p
 ### 🖼️ Preview
 ![Preview do Dashboard](https://raw.githubusercontent.com/rfaelvitor/portfolio/ae7f29ee3fa8940b5b786720275ba7568385543a/Foto_dashboard.jpg)
 
+**Observação**: Os valores apresentados no dashboard são fictícios e foram criados para fins demonstrativos. Eles não representam dados reais.
+
 ---
 
 ## 📊 Projeto 2: Dashboard para o Setor de Cursos (Empresa)
@@ -22,6 +24,8 @@ Esse projeto foi desenvolvido para o setor de cursos da empresa onde trabalho. O
 Abaixo está o preview do dashboard utilizado para controle de cursos e eventos da empresa:
 
 ![Preview do Dashboard Empresarial](https://raw.githubusercontent.com/rfaelvitor/portfolio/ae7f29ee3fa8940b5b786720275ba7568385543a/Foto_dashboard_empresa.jpg)
+
+**Observação**: Os valores apresentados no dashboard são fictícios e foram criados para fins demonstrativos. Eles não representam dados reais.
 
 ---
 

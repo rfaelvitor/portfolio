@@ -21,9 +21,12 @@ O dashboard foi exportado para PowerPoint, onde os gráficos e visualizações p
 Esse projeto foi desenvolvido para o setor de cursos da empresa onde trabalho. O dashboard interativo foi criado com o Power BI para monitoramento e controle das atividades do setor.
 
 ### 📈 Visualização
-Abaixo está o preview do dashboard utilizado para controle de cursos e eventos da empresa:
+O dashboard foi exportado para PowerPoint, onde os gráficos e visualizações podem ser interativos. Clique no link abaixo para fazer o download e ver o conteúdo:
 
-![Preview do Dashboard Empresarial](https://raw.githubusercontent.com/rfaelvitor/portfolio/ae7f29ee3fa8940b5b786720275ba7568385543a/Foto_dashboard_empresa.jpg)
+[![Baixar PowerPoint com Dashboard](https://img.shields.io/badge/Download-PowerPoint-blue?style=for-the-badge)](https://raw.githubusercontent.com/rfaelvitor/portfolio/55260687ddf4d19db1f5a2ff03c033ecb5f748b5/Dashboard%20Controle%20dos%20Cursos%20Empresariais%20-%20C%C3%B3pia%20compartilh%C3%A1vel.pptx)
+
+### 🖼️ Preview
+![Preview do Dashboard](https://raw.githubusercontent.com/rfaelvitor/portfolio/ae7f29ee3fa8940b5b786720275ba7568385543a/Foto_dashboard_empresa.jpg)
 
 **Observação**: Os valores apresentados no dashboard são fictícios e foram criados para fins demonstrativos. Eles não representam dados reais.
 

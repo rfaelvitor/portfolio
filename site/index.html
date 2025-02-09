@@ -12,31 +12,83 @@
 <body>
     <div class="container">
         <header>
-            <a href=""><li>Home</li></a>
-            <a href=""><li>Sobre mim</li></a>
-            <a href=""><li>Projetos</li></a>
-            <a href=""><li>Contato</li></a>
+            <a href="#home">
+                <li>Home</li>
+            </a>
+            <a href="#about-me">
+                <li>Sobre mim</li>
+            </a>
+            <a href="#projects">
+                <li>Projetos</li>
+            </a>
+            <a href="">
+                <li>Contato</li>
+            </a>
         </header>
-        <div class="first-box">
+        <section class="first-box" id="home">
             <div class="first-box-left">
                 <h1>Rafael Abreu</h1>
                 <p>Engenharia de <b><span id="software">Software</span></b></p>
                 <hr>
                 <div>
-                <a href="https://github.com/rfaelvitor" target="_blank">
-                <button>GitHub</button>
-                </a>
-                <a href="https://br.linkedin.com/in/rafael-abreu-62318223a" target="_blank">
-                <button>LinkedIn</button>
-                </a>
+                    <a href="https://github.com/rfaelvitor" target="_blank">
+                        <button>GitHub</button>
+                    </a>
+                    <a href="https://br.linkedin.com/in/rafael-abreu-62318223a" target="_blank">
+                        <button>LinkedIn</button>
+                    </a>
+                </div>
             </div>
+            <div class="first-box-right">
+                <img class="imagem-apresentacao"
+                    src="images/tech.png" alt="">
             </div>
-                <div class="first-box-right">
-                <img class="imagem-apresentacao" src="https://images4.programmersought.com/764/d9/d963b866b9df02ad89b354a3b23dfafc.gif" alt="">
+            <img class="seta" src="images/arrow.png" alt="">
+
+        </section>
+        <section class="second-box" id="about-me">
+            <div class="second-box-left">
+                <img class="personal-pic"
+                src="images/personal-pic.jpg" alt="">
             </div>
-            <img class="seta" src="images/avanco-rapido.png" alt="">
-            
-        </div>
+            <div class="second-box-right">
+                <h1>Sobre mim</h1>
+                <p>Estudante de TI, apaixonado por tecnologia, sempre explorando novas áreas e buscando aprendizado prático para evoluir na carreira. <img id="marca-de-verificacao" src="images/marca-de-verificacao.png"></p>
+                <a href="images/Currículo - Rafael Abreu.pdf" download="Currículo - Rafael Abreu.pdf">
+                <button>Baixar Currículo</button>
+            </a>
+            </div> 
+        </section>
+        <section class="third-box">
+            <div class="project" id="projects">
+                <img src="images/Foto_dashboard.jpg" alt="Projeto 1">
+                <div class="project-info">
+                    <h3>Dashboard Financeiro Pessoal</h3>
+                    <p>Esse projeto consiste na criação de um dashboard interativo, utilizando Power BI, e exportado para PowerPoint.</p>
+                </div>
+            </div>
+            <div class="project">
+                <img src="images/Foto_dashboard_empresa.jpg" alt="Projeto 1">
+                <div class="project-info">
+                    <h3>Dashboard para o Setor de Cursos (Empresa)</h3>
+                    <p>Esse projeto foi desenvolvido para o setor de cursos da empresa onde trabalho. O dashboard interativo foi criado com o Power BI para monitoramento e controle das atividades do setor.</p>
+                </div>
+            </div>  
+                <div class="project">
+                <img src="images/Foto-projeto_AI_API.png" alt="Projeto 1">
+                <div class="project-info">
+                    <h3>Gerador de Imagens e Textos com API de IA</h3>
+                    <p>Este projeto foi desenvolvido em HTML, CSS e JavaScript e utiliza uma API de IA para gerar imagens e textos de acordo com o que o usuário escreve. O objetivo é criar uma interface interativa onde o usuário insere um comando, e a IA gera o conteúdo automaticamente.</p>
+                </div>
+            </div>
+                <div class="project">
+                    <img src="images/Foto_login-page.png" alt="Projeto 1">
+                    <div class="project-info">
+                        <h3>Página de Login</h3>
+                        <p>Este projeto consiste em uma página de login simples, criada utilizando HTML e CSS. O foco foi na criação de uma interface limpa e funcional para login de usuários.</p>
+                    </div>
+            </div>
+        </section>
 </body>
 
 </html>

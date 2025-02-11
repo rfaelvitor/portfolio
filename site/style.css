@@ -308,6 +308,7 @@ textarea::placeholder {
 }
 
 footer {
+    position: absolute;
     width: 100%;
     font-size: small;
     text-align: center;

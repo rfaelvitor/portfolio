@@ -255,21 +255,63 @@ hr {
 .fourth-box-left {
     height: 100vh;
     width: 50%;
-    background-color: #00547b;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 5%;
 }
 
+
 .fourth-box-right {
     height: 100vh;
     width: 50%;
-    background-color: #00405e;
+    background-color: #002737;
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10%;
  }
+
+ form {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+form > button {
+    width: 50%;
+}
+
+#email,
+textarea {
+    padding: 10px;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+    border-color: var(--secundary);
+    /* border-style: hidden; */
+    outline: none;
+    margin-top: 5px;
+    resize: vertical;
+    color: var(--main);
+}
+
+#email::placeholder,
+textarea::placeholder {
+    color: #aaa;
+    font-size: 1rem;
+    font-style: italic;
+}
+
+#submit {
+    margin: auto;
+}
+
+footer {
+    width: 100%;
+    font-size: small;
+    text-align: center;
+    background-color: var(--main)
+}
 
     

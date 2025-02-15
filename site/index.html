@@ -12,16 +12,16 @@
     <div class="container">
       <header>
         <a href="#home">
-          <li>Home</li>
+          <li><img id="icon" src="images/home-button.png" alt=""> Home</li>
         </a>
         <a href="#about-me">
-          <li>Sobre mim</li>
+          <li><img id="icon" src="images/boy.png" alt="">Sobre mim</li>
         </a>
         <a href="#projects">
-          <li>Projetos</li>
+          <li><img id="icon" src="images/programming.png" alt="">Projetos</li>
         </a>
         <a href="#contacts">
-          <li>Contato</li>
+          <li><img id="icon" src="images/contact.png" alt="">Contato</li>
         </a>
       </header>
       <section class="first-box" id="home">
@@ -33,13 +33,13 @@
           <hr />
           <div>
             <a href="https://github.com/rfaelvitor" target="_blank">
-              <button>GitHub</button>
+              <button><span id="text-button"><img id="icon" src="images/github.png" alt="">GitHub</span></button>
             </a>
             <a
               href="https://br.linkedin.com/in/rafael-abreu-62318223a"
               target="_blank"
             >
-              <button>LinkedIn</button>
+              <button><span id="text-button"><img id="icon" src="images/linkedin.png" alt="">LinkedIn</span></button>
             </a>
           </div>
         </div>
@@ -126,38 +126,39 @@
       </section>
       <section class="fourth-box">
         <div class="fourth-box-left">
-          <p><img src="images/e-mail.png" alt="" /></p>
+          <img src="images/email.png" alt="" />
         </div>
         <div class="fourth-box-right">
           <form
-            action="https://formspree.io/f/xgvolell"
-            method="POST"
-            id="contacts"
+          action="https://formspree.io/f/xgvolell"
+          method="POST"
+          id="contacts"
           >
-            <label>
-              Seu e-mail:
-              <input
-                type="email"
-                name="email"
-                placeholder="Exemplo: seuemail@dominio.com"
-                id="email"
-                required
-              />
-            </label>
-            <label>
-              Sua mensagem:
-              <textarea
-                rows="10"
-                name="message"
-                placeholder="Descreva o motivo do seu contato..."
-                required
-              ></textarea>
-            </label>
-            <button type="submit" id="submit">Enviar</button>
-          </form>
-        </div>
-      </section>
-      <footer>Copyright &#xa9; 2025 - Todos os direitos reservados</footer>
-    </div>
-  </body>
+          <h1>Fale comigo!<img id="airplane-img" src="images/airplane.png" alt=""></h1>
+          <label>
+            Seu e-mail:
+            <input
+            type="email"
+            name="email"
+            placeholder="Exemplo: seuemail@dominio.com"
+            id="email"
+            required
+            />
+          </label>
+          <label>
+            Sua mensagem:
+            <textarea
+            rows="10"
+            name="message"
+            placeholder="Descreva o motivo do seu contato..."
+            required
+            ></textarea>
+          </label>
+          <button type="submit" id="submit">Enviar</button>
+        </form>
+      </div>
+    </section>
+    <footer>Copyright &#xa9; 2025 - Todos os direitos reservados</footer>
+  </div>
+</body>
 </html>

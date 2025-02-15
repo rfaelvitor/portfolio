@@ -30,6 +30,7 @@ h1 {
 }
 
 .container {
+    position: relative;
     height: 500vh;
     width: 100%;
     background-image: radial-gradient(circle at 9.06% 21.33%, #00547b 0, #021826 50%, #000000 100%);
@@ -45,6 +46,24 @@ header {
     align-items: center;
     position: fixed;
     z-index: 1;
+}
+
+header li {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#icon {
+    height: 25px;
+    width: 25px;
+    margin-right: 10px;
+}
+
+#text-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header a {
@@ -125,7 +144,8 @@ button {
     font-weight: bold;
 }
 
-button:hover {
+button:hover,
+#text-button:hover {
     cursor: pointer;
     background-color: var(--secundary);
     color: var(--main);
@@ -153,7 +173,7 @@ a {
     height: 30px;
     width: 30px;
     position: absolute;
-    top: 90%;
+    top: 18%;
     animation: subir-e-descer 1s infinite alternate ease-in-out;
 }
 
@@ -250,7 +270,7 @@ hr {
  .fourth-box {
     height: 100vh;
     width: 100%;
-    background-color: var(--main);
+    /* background-color: var(--main); */
     display: flex;
     
 }
@@ -261,21 +281,31 @@ hr {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 5%;
+    padding: 200px;
+}
+
+.fourth-box-left > img {
+    width: 80%;
+    height: 100%;
 }
 
 
 .fourth-box-right {
     height: 100vh;
     width: 50%;
-    background-color: #002737;
+    /* background-color: #002737; */
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 10%;
- }
+}
 
- form {
+.fourth-box-right h1{
+    text-align: center;
+}
+
+
+form {
     display: flex;
     flex-direction: column;
     gap: 30px;
@@ -283,6 +313,23 @@ hr {
 
 form > button {
     width: 50%;
+}
+
+@keyframes voar-e-voltar {
+
+    0% {
+        transform: translateX(0) translateY(0);
+    
+    }
+    100% {
+        transform: translateX(-10px) translateY(10px);
+    }
+}
+
+#airplane-img {
+    height: 4rem;
+    margin-left: 15px;
+    animation: voar-e-voltar 1s infinite alternate ease-in-out;
 }
 
 #email,
@@ -312,11 +359,14 @@ textarea::placeholder {
 
 footer {
     position: absolute;
+    bottom: 0;
     width: 100%;
-    font-size: small;
     text-align: center;
-    background-color: var(--main)
+    padding: 10px 0;
+    color: var(--secundary);
+    font-size: small;
 }
+
 
 #more-info-button {
     background-color: var(--main);
@@ -327,4 +377,3 @@ footer {
     background-color: var(--secundary);
 }
 
-    

@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfólio | Rafael</title>
     <link rel="stylesheet" href="style.css" />
-    <script src="script.js"></script>
+    
   </head>
 
   <body>
@@ -82,25 +82,36 @@
           </a>
         </div>
       </section>
-      <br>
-      <br id="projects">
-      <br>
-      <br>
-      <h1 id="meus-projetos">Meus projetos</h1>
+      <br />
+      <br id="projects" />
+      <br />
+      <br />
+      <h1 id="meus-projetos">
+        Meus projetos <img src="images/reporting.png" alt="" />
+      </h1>
       <section class="third-box">
         <div class="project">
           <img src="images/Foto_dashboard.jpg" alt="Projeto 1" />
           <div class="project-info">
             <h3>💸 Dashboard: Financeiro Pessoal</h3>
             <p>
-              <!-- Este dashboard foi desenvolvido no Power BI (exportado para PowerPoint para o download) para facilitar o acompanhamento das finanças pessoais. Ele apresenta gráficos interativos que mostram receitas, despesas e saldo ao longo do tempo, permitindo uma análise detalhada da saúde financeira.
-               📌 Ferramentas utilizadas: Power BI, Excel -->
               Controle suas finanças e visualize seus resultados de forma
               interativa.
             </p>
-            <button id="more-info-button">Mais informações</button>
-            <a
-              href="download-files/Dashboard_Financeiro_Pessoal.pptx"
+            <button onclick="abrirPopup()" id="more-info-button">
+              Mais informações
+            </button>
+            <div id="overlay" class="overlay" onclick="fecharPopup()">
+              <div class="popup" onclick="event.stopPropagation()">
+                <span class="fechar" onclick="fecharPopup()"><img src="images/x.png"></span>
+                <h2>💸 Dashboard: Financeiro Pessoal</h2>
+                <p>Este dashboard foi desenvolvido no Power BI (exportado para PowerPoint para o download) para facilitar o acompanhamento das finanças pessoais. Ele apresenta gráficos interativos que mostram receitas, despesas e saldo ao longo do tempo, permitindo uma análise detalhada da saúde financeira.</p>
+                <br>
+                  <p><b>📌 Ferramentas utilizadas:</b> Power BI, Excel.</p>
+              </div>
+            </div>
+            
+            <a href="download-files/Dashboard_Financeiro_Pessoal.pptx"
               ><button>Download</button></a
             >
           </div>
@@ -115,8 +126,7 @@
               Monitoramento de cursos e desempenho do setor em tempo real.
             </p>
             <button id="more-info-button">Mais informações</button>
-            <a
-              href="download-files/Dashboard_Controle_Cursos.pptx"
+            <a href="download-files/Dashboard_Controle_Cursos.pptx"
               ><button>Download</button></a
             >
           </div>
@@ -166,11 +176,9 @@
             id="contacts"
           >
             <h1>
-              Fale comigo!<img
-                id="airplane-img"
-                src="images/airplane.png"
-                alt=""
-              />
+              Fale
+              <br />
+              comigo!<img id="airplane-img" src="images/airplane.png" alt="" />
             </h1>
             <label>
               Seu e-mail:
@@ -197,5 +205,6 @@
       </section>
       <footer>Copyright &#xa9; 2025 - Todos os direitos reservados</footer>
     </div>
+    <script src="script.js"></script>
   </body>
 </html>

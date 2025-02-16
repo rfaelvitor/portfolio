@@ -135,8 +135,7 @@ header a:last-child {
 /*BUTTON */
 
 button {
-    height: 5vh;
-    width: 10vw;
+    padding: 5px 30px;
     background-color: #013F5D;
     border-radius: 5px;
     margin: 10px;
@@ -154,12 +153,15 @@ button {
 }
 
 button:hover,
-button:hover a,
 #text-button:hover {
     cursor: pointer;
     background-color: var(--secundary);
     color: var(--main);
 }
+
+/* button:hover {
+    transform: scale(1.05);
+} */
 
 a {
     text-decoration: none;
@@ -256,6 +258,10 @@ hr {
     text-align: center;
 }
 
+#meus-projetos img {
+    height: 4rem;
+    margin-left: 15px;
+}
 
 .project {
     
@@ -312,10 +318,6 @@ hr {
     align-items: center;
     justify-content: center;
     padding: 10%;
-}
-
-.fourth-box-right h1{
-    text-align: center;
 }
 
 
@@ -383,3 +385,64 @@ footer {
 
 
 
+/* Fundo escuro (overlay) - começa invisível */
+.overlay {
+    visibility: hidden;  /* Esconde, mas mantém espaço */
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* Pop-up */
+.popup {
+    height: 75vh;
+    width: 60vw;
+    background: var(--main);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px var(--secundary);
+    opacity: 0;
+    transform: scale(0.8);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.popup h2 {
+    padding: 50px;
+    text-decoration: underline;
+}
+
+.popup p {
+    padding: 0% 10%;
+    font-size: 1.5rem;
+}
+
+/* Mostrar o pop-up quando o overlay estiver ativo */
+.overlay.ativo {
+    visibility: visible; /* Agora visível */
+    opacity: 1; /* Mostra com transição */
+}
+
+.overlay.ativo .popup {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.fechar img {
+    position: absolute;
+    height: 25px;
+    width: 25px;
+    top: 10px;
+    right: 10px;
+}
+
+.fechar img:hover {
+    cursor: pointer;
+}

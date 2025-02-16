@@ -31,7 +31,7 @@ h1 {
 
 .container {
     position: relative;
-    height: 500vh;
+    height: auto;
     width: 100%;
     background-image: radial-gradient(circle at 9.06% 21.33%, #00547b 0, #021826 50%, #000000 100%);
 }
@@ -144,7 +144,17 @@ button {
     font-weight: bold;
 }
 
+#more-info-button {
+    background-color: var(--main);
+    border-color: white;
+}
+
+#more-info-button:hover {
+    background-color: var(--secundary);
+}
+
 button:hover,
+button:hover a,
 #text-button:hover {
     cursor: pointer;
     background-color: var(--secundary);
@@ -230,21 +240,25 @@ hr {
     height: 30px;
     width: auto;
 }
-    
+
 .third-box {
     height: 200vh;
     width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 10% 20%;
-    padding: 10%;
+    padding: 5% 10%;
     /* border: 2px solid red; */
     
 }
 
+#meus-projetos {
+    text-align: center;
+}
+
 
 .project {
-
+    
     background-color: var(--main);
     border: 2px solid var(--secundary);
     animation: glow 2.5s infinite alternate ease-in-out;
@@ -259,7 +273,7 @@ hr {
     width: 100%;
     height: 100%;
     margin-bottom: 20px;
-
+    
 }
 
 .project-info > p {
@@ -267,7 +281,7 @@ hr {
     margin: 10px;
 }
 
- .fourth-box {
+.fourth-box {
     height: 100vh;
     width: 100%;
     /* background-color: var(--main); */
@@ -368,12 +382,4 @@ footer {
 }
 
 
-#more-info-button {
-    background-color: var(--main);
-    border-color: white;
-}
-
-#more-info-button:hover {
-    background-color: var(--secundary);
-}
 

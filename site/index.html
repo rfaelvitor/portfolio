@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,16 +12,16 @@
     <div class="container">
       <header>
         <a href="#home">
-          <li><img id="icon" src="images/home-button.png" alt=""> Home</li>
+          <li><img id="icon" src="images/home-button.png" alt="" /> Home</li>
         </a>
         <a href="#about-me">
-          <li><img id="icon" src="images/boy.png" alt="">Sobre mim</li>
+          <li><img id="icon" src="images/boy.png" alt="" />Sobre mim</li>
         </a>
         <a href="#projects">
-          <li><img id="icon" src="images/programming.png" alt="">Projetos</li>
+          <li><img id="icon" src="images/programming.png" alt="" />Projetos</li>
         </a>
         <a href="#contacts">
-          <li><img id="icon" src="images/contact.png" alt="">Contato</li>
+          <li><img id="icon" src="images/contact.png" alt="" />Contato</li>
         </a>
       </header>
       <section class="first-box" id="home">
@@ -33,13 +33,25 @@
           <hr />
           <div>
             <a href="https://github.com/rfaelvitor" target="_blank">
-              <button><span id="text-button"><img id="icon" src="images/github.png" alt="">GitHub</span></button>
+              <button>
+                <span id="text-button"
+                  ><img id="icon" src="images/github.png" alt="" />GitHub</span
+                >
+              </button>
             </a>
             <a
               href="https://br.linkedin.com/in/rafael-abreu-62318223a"
               target="_blank"
             >
-              <button><span id="text-button"><img id="icon" src="images/linkedin.png" alt="">LinkedIn</span></button>
+              <button>
+                <span id="text-button"
+                  ><img
+                    id="icon"
+                    src="images/linkedin.png"
+                    alt=""
+                  />LinkedIn</span
+                >
+              </button>
             </a>
           </div>
         </div>
@@ -70,18 +82,27 @@
           </a>
         </div>
       </section>
+      <br>
+      <br id="projects">
+      <br>
+      <br>
+      <h1 id="meus-projetos">Meus projetos</h1>
       <section class="third-box">
-        <div class="project" id="projects">
+        <div class="project">
           <img src="images/Foto_dashboard.jpg" alt="Projeto 1" />
           <div class="project-info">
             <h3>💸 Dashboard: Financeiro Pessoal</h3>
             <p>
               <!-- Este dashboard foi desenvolvido no Power BI (exportado para PowerPoint para o download) para facilitar o acompanhamento das finanças pessoais. Ele apresenta gráficos interativos que mostram receitas, despesas e saldo ao longo do tempo, permitindo uma análise detalhada da saúde financeira.
                📌 Ferramentas utilizadas: Power BI, Excel -->
-               Controle suas finanças e visualize seus resultados de forma interativa.
+              Controle suas finanças e visualize seus resultados de forma
+              interativa.
             </p>
             <button id="more-info-button">Mais informações</button>
-            <button>Download</button>
+            <a
+              href="download-files/Dashboard_Financeiro_Pessoal.pptx"
+              ><button>Download</button></a
+            >
           </div>
         </div>
         <div class="project">
@@ -91,10 +112,13 @@
             <p>
               <!-- Este dashboard foi criado para gerenciar cursos da empresa onde trabalho. Ele exibe métricas como número de inscrições, faturamento e taxa de comparecimento, permitindo decisões estratégicas baseadas em dados.
                📌 Ferramentas utilizadas: Power BI, Excel -->
-               Monitoramento de cursos e desempenho do setor em tempo real.
+              Monitoramento de cursos e desempenho do setor em tempo real.
             </p>
             <button id="more-info-button">Mais informações</button>
-            <button>Download</button>
+            <a
+              href="download-files/Dashboard_Controle_Cursos.pptx"
+              ><button>Download</button></a
+            >
           </div>
         </div>
         <div class="project">
@@ -102,12 +126,17 @@
           <div class="project-info">
             <h3>🤖 Gerador de Imagens e Textos</h3>
             <p>
-             <!--  Esse projeto utiliza uma API de IA para gerar imagens e textos conforme o comando do usuário. A interface permite interações dinâmicas e a personalização do conteúdo gerado.
+              <!--  Esse projeto utiliza uma API de IA para gerar imagens e textos conforme o comando do usuário. A interface permite interações dinâmicas e a personalização do conteúdo gerado.
               📌 Ferramentas utilizadas: HTML, CSS, JavaScript, API de IA -->
-               Gere quaisquer imagens e textos automaticamente com inteligência artificial.
+              Gere quaisquer imagens e textos automaticamente com inteligência
+              artificial.
             </p>
             <button id="more-info-button">Mais informações</button>
-            <button>Ir para o projeto</button>
+            <a
+              href="https://rfaelvitor.github.io/Testing_an_API_v2/BOT_IMAGES/"
+              target="_blank"
+              ><button>Ir para o projeto</button></a
+            >
           </div>
         </div>
         <div class="project">
@@ -117,10 +146,12 @@
             <p>
               <!-- Este projeto consiste em uma página de login responsiva, projetada para garantir uma experiência intuitiva ao usuário. A estrutura foi desenvolvida com HTML e CSS, focando em um design limpo e funcional. 
                📌 Ferramentas utilizadas: HTML, CSS -->
-               Interface simples e segura para login de usuários.
+              Interface simples e segura para login de usuários.
             </p>
             <button id="more-info-button">Mais informações</button>
-            <button>Ir para o projeto</button>
+            <a href=" https://rfaelvitor.github.io/loginpage/" target="_blank"
+              ><button>Ir para o projeto</button></a
+            >
           </div>
         </div>
       </section>
@@ -130,35 +161,41 @@
         </div>
         <div class="fourth-box-right">
           <form
-          action="https://formspree.io/f/xgvolell"
-          method="POST"
-          id="contacts"
+            action="https://formspree.io/f/xgvolell"
+            method="POST"
+            id="contacts"
           >
-          <h1>Fale comigo!<img id="airplane-img" src="images/airplane.png" alt=""></h1>
-          <label>
-            Seu e-mail:
-            <input
-            type="email"
-            name="email"
-            placeholder="Exemplo: seuemail@dominio.com"
-            id="email"
-            required
-            />
-          </label>
-          <label>
-            Sua mensagem:
-            <textarea
-            rows="10"
-            name="message"
-            placeholder="Descreva o motivo do seu contato..."
-            required
-            ></textarea>
-          </label>
-          <button type="submit" id="submit">Enviar</button>
-        </form>
-      </div>
-    </section>
-    <footer>Copyright &#xa9; 2025 - Todos os direitos reservados</footer>
-  </div>
-</body>
+            <h1>
+              Fale comigo!<img
+                id="airplane-img"
+                src="images/airplane.png"
+                alt=""
+              />
+            </h1>
+            <label>
+              Seu e-mail:
+              <input
+                type="email"
+                name="email"
+                placeholder="Exemplo: seuemail@dominio.com"
+                id="email"
+                required
+              />
+            </label>
+            <label>
+              Sua mensagem:
+              <textarea
+                rows="10"
+                name="message"
+                placeholder="Descreva o motivo do seu contato..."
+                required
+              ></textarea>
+            </label>
+            <button type="submit" id="submit">Enviar</button>
+          </form>
+        </div>
+      </section>
+      <footer>Copyright &#xa9; 2025 - Todos os direitos reservados</footer>
+    </div>
+  </body>
 </html>

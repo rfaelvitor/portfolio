@@ -57,6 +57,7 @@ header li {
 #icon {
     height: 25px;
     width: 25px;
+    margin: auto;
     margin-right: 10px;
 }
 
@@ -386,7 +387,10 @@ footer {
 
 
 /* Fundo escuro (overlay) - começa invisível */
-.overlay {
+.overlay_1,
+.overlay_2,
+.overlay_3,
+.overlay_4 { 
     visibility: hidden;  /* Esconde, mas mantém espaço */
     position: fixed;
     top: 0;
@@ -424,13 +428,23 @@ footer {
     font-size: 1.5rem;
 }
 
+.popup button {
+    margin-top: 5%;
+}
+
 /* Mostrar o pop-up quando o overlay estiver ativo */
-.overlay.ativo {
+.overlay_1.ativo,
+.overlay_2.ativo,
+.overlay_3.ativo,
+.overlay_4.ativo {
     visibility: visible; /* Agora visível */
     opacity: 1; /* Mostra com transição */
 }
 
-.overlay.ativo .popup {
+.overlay_1.ativo .popup,
+.overlay_2.ativo .popup,
+.overlay_3.ativo .popup,
+.overlay_4.ativo .popup {
     opacity: 1;
     transform: scale(1);
 }

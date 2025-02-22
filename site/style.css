@@ -386,12 +386,12 @@ footer {
 
 
 
-/* Fundo escuro (overlay) - começa invisível */
+
 .overlay_1,
 .overlay_2,
 .overlay_3,
 .overlay_4 { 
-    visibility: hidden;  /* Esconde, mas mantém espaço */
+    visibility: hidden;  
     position: fixed;
     top: 0;
     left: 0;
@@ -405,40 +405,56 @@ footer {
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* Pop-up */
+
 .popup {
     height: 75vh;
     width: 60vw;
     background: var(--main);
-    padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 10px var(--secundary);
     opacity: 0;
     transform: scale(0.8);
     transition: opacity 0.3s ease, transform 0.3s ease;
+    padding: 5%;
 }
 
 .popup h2 {
-    padding: 50px;
+    margin-bottom: 30px;
     text-decoration: underline;
 }
 
 .popup p {
-    padding: 0% 10%;
     font-size: 1.5rem;
 }
 
-.popup button {
-    margin-top: 5%;
+.popup p:first-of-type {
+    margin-bottom: 50px;
 }
 
-/* Mostrar o pop-up quando o overlay estiver ativo */
+
+.popup button {
+    margin-top: 5px;
+    
+}
+
+.area-button {
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    height: 30%;
+    width: 100%;
+    /* background-color: red; */
+}
+
 .overlay_1.ativo,
 .overlay_2.ativo,
 .overlay_3.ativo,
 .overlay_4.ativo {
-    visibility: visible; /* Agora visível */
-    opacity: 1; /* Mostra com transição */
+    visibility: visible;
+    opacity: 1; /*transição */
 }
 
 .overlay_1.ativo .popup,

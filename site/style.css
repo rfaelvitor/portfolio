@@ -61,11 +61,6 @@ header li {
     margin-right: 10px;
 }
 
-#text-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
 
 header a {
     list-style: none;
@@ -136,12 +131,21 @@ header a:last-child {
 /*BUTTON */
 
 button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     padding: 5px 30px;
     background-color: #013F5D;
     border-radius: 5px;
     margin: 10px;
     border-color: white;
     font-weight: bold;
+}
+
+.area-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
 }
 
 #more-info-button {
@@ -153,8 +157,7 @@ button {
     background-color: var(--secundary);
 }
 
-button:hover,
-#text-button:hover {
+button:hover {
     cursor: pointer;
     background-color: var(--secundary);
     color: var(--main);
@@ -437,7 +440,7 @@ footer {
     
 }
 
-.area-button {
+.area-buttons-popup {
     position: absolute;
     display: flex;
     align-items: center;

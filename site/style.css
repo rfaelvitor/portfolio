@@ -93,7 +93,7 @@ header a:last-child {
 .first-box {
   height: 100vh;
   width: 100%;
-  /* background-image: radial-gradient(circle at 9.06% 21.33%, #00547b 0, #021826 50%, #000000 100%); */
+  /* background-image: radial-gradient(circle at 9.06% 21.33%, #00547b 0%, #021826 50%, #000000 100%);  */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -176,8 +176,8 @@ a {
 }
 
 .imagem-apresentacao {
-  height: 65%;
-  width: 75%;
+  height: 50%;
+  width: 65%;
 }
 
 @keyframes subir-e-descer {
@@ -193,7 +193,7 @@ a {
   height: 30px;
   width: 30px;
   position: absolute;
-  top: 18%;
+  top: 14%;
   animation: subir-e-descer 1s infinite alternate ease-in-out;
 }
 
@@ -208,6 +208,11 @@ hr {
   height: 100vh;
   width: 100%;
   /* background-image: radial-gradient(circle at 9.06% 21.33%, #00547b 0, #021826 50%, #000000 100%); */
+  /* background-image: radial-gradient(circle at 9.06% 21.33%, 
+  #000000 0%, 
+  #000000 25%,   
+  #021826 70%, 
+  #00547b 100%); */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -252,16 +257,32 @@ hr {
 }
 
 .third-box {
-  height: 200vh;
+  height: 300vh;
   width: 100%;
+  /* background-image: radial-gradient(circle at 9.06% 21.33%, #00547b 0%, #021826 50%, #000000 100%);  */
+  /* background-image: radial-gradient(circle at 9.06% 21.33%, 
+  #000000 0%, 
+  #000000 25%,   
+  #021826 70%, 
+  #00547b 100%); */
+  border: 2px solid green;
+}
+
+.projects-box {
+  /* height: 200vh;
+  width: 100%; */
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 10%;
   padding: 5% 10%;
   /* border: 2px solid red; */
+  /* justify-items: center;
+  align-items: center; */
 }
 
 #meus-projetos {
+  margin-top: 110px;
+  margin-bottom: 10px;
   text-align: center;
 }
 
@@ -297,11 +318,17 @@ hr {
   width: 100%;
   /* background-color: var(--main); */
   display: flex;
+  /* background-image: radial-gradient(circle at 9.06% 21.33%, 
+  #000000 0%, 
+  #000000 25%,   
+  #021826 70%, 
+  #00547b 100%); */
+  /* border: 2px solid orange; */
 }
 
 .fourth-box-left {
   height: 100vh;
-  width: 50%;
+  width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -317,7 +344,7 @@ hr {
 
 .fourth-box-right {
   height: 100vh;
-  width: 50%;
+  width: 50vw;
   /* background-color: #002737; */
   display: flex;
   align-items: center;
@@ -325,8 +352,8 @@ hr {
   padding: 10%;
 }
 
-.fourth-box-right > h1 {
-  margin: 1000px;
+.form-field > h1 span {
+  display: block;
 }
 
 form {
@@ -350,7 +377,7 @@ form > button {
 
 #airplane-img {
   height: 4rem;
-  margin-left: 15px;
+  /* margin-left: 15px; */
   animation: voar-e-voltar 1s infinite alternate ease-in-out;
 }
 
@@ -377,6 +404,7 @@ textarea::placeholder {
 
 #submit {
   margin: auto;
+  max-width: 150px;
 }
 
 footer {
@@ -392,7 +420,8 @@ footer {
 .overlay_1,
 .overlay_2,
 .overlay_3,
-.overlay_4 {
+.overlay_4,
+.overlay_5 {
   visibility: hidden;
   position: fixed;
   top: 0;
@@ -405,6 +434,11 @@ footer {
   justify-content: center;
   align-items: center;
   transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.no-scroll {
+  overflow: hidden !important;
+  height: 100%;
 }
 
 .popup {
@@ -436,8 +470,15 @@ footer {
   margin-top: 5px;
 }
 
+.text-pop-up-field {
+  height: 70%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .area-buttons-popup {
-  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -451,7 +492,8 @@ footer {
 .overlay_1.ativo,
 .overlay_2.ativo,
 .overlay_3.ativo,
-.overlay_4.ativo {
+.overlay_4.ativo,
+.overlay_5.ativo {
   visibility: visible;
   opacity: 1; /*transição */
 }
@@ -459,7 +501,8 @@ footer {
 .overlay_1.ativo .popup,
 .overlay_2.ativo .popup,
 .overlay_3.ativo .popup,
-.overlay_4.ativo .popup {
+.overlay_4.ativo .popup,
+.overlay_5.ativo .popup {
   opacity: 1;
   transform: scale(1);
 }
@@ -477,39 +520,27 @@ footer {
 }
 
 @media screen and (max-width: 1120px) {
-
-    
-
-
-
-    header {
-        display: none;
-    }
+  header {
+    display: none;
+  }
 
   p {
     font-size: 1.5rem;
   }
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: center;
   }
 
-  .first-box {
-    height: 100vh;
+  .seta {
+    top: 14%;
   }
 
-  .first-box > img {
-    top: 15%;
-  }
-
-
-
-  .first-box-left > p, 
+  .first-box-left > p,
   .first-box-left > h1 {
     text-align: center;
     margin: 20px;
   }
-
 
   .first-box-left > .area-buttons {
     margin-top: 20%;
@@ -562,16 +593,29 @@ footer {
   }
 
   .third-box {
+    height: 350vh;
+  }
+
+  .projects-box {
     grid-template-columns: repeat(1, 1fr);
     padding: 0% 8% 0% 8%;
     gap: 2%;
     margin: 0;
-    height: 250vh;
+    justify-items: center;
+    align-items: center;
   }
 
   .project {
     height: 50vh;
     width: 80vw;
+    max-width: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .project img {
+    max-width: 300px;
   }
 
   .fourth-box {
@@ -584,11 +628,67 @@ footer {
     display: none;
   }
 
-  #contacts{
+  #contacts {
     gap: 10px;
+  }
+
+  #contacts > label {
+    width: 80vw;
   }
 
   footer {
     margin-bottom: 5px;
+  }
+
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-self: center;
+    margin-bottom: 20px;
+  }
+
+  .form-field > h1 {
+    width: 60vw;
+  }
+
+  .form-field > h1 span {
+    display: inline;
+  }
+
+  #airplane-img {
+    height: 3rem;
+  }
+
+  .popup {
+    height: 80vh;
+    width: 97vw;
+    padding: 7%;
+  }
+
+  .popup h2 {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-decoration: underline;
+  }
+
+  .popup p {
+    font-size: 1rem;
+  }
+
+  .popup p:first-of-type {
+    margin-bottom: 50px;
+  }
+
+  .popup button {
+    margin-top: 5px;
+  }
+
+  #several-options-project-button {
+    max-width: 100px;
+  }
+
+  .popup > p > img:first-of-type {
+    margin-top: 50px;
   }
 }

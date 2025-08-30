@@ -49,18 +49,23 @@
         <div class="first-box-right">
           <img class="imagem-apresentacao" src="images/tech.png" alt="" />
         </div>
-        <img class="seta" src="images/arrow.png" alt="" />
+        <img onclick="irParaSecao('about-me')" class="seta" src="images/arrow.png" alt="" />
       </section>
       <section class="second-box" id="about-me">
         <div class="second-box-left">
-          <img class="personal-pic" src="images/foto-pessoal-cortada2.jpg" alt="" />
+          <img
+            class="personal-pic"
+            src="images/foto-pessoal-cortada2.jpg"
+            alt=""
+          />
         </div>
         <div class="second-box-right">
           <h1>Sobre mim</h1>
           <p>
             <!-- Estudante de TI, apaixonado por tecnologia, sempre explorando novas
             áreas e buscando aprendizado prático para evoluir na carreira. -->
-            Busco iniciar minha carreira como desenvolvedor, aplicando o que sei, aprendendo continuamente e ajudando a criar soluções reais.
+            Busco iniciar minha carreira como desenvolvedor, aplicando o que
+            sei, aprendendo continuamente e ajudando a criar soluções reais.
             <img
               id="marca-de-verificacao"
               src="images/marca-de-verificacao.png"
@@ -76,181 +81,305 @@
           </a>
         </div>
       </section>
-      <br />
-      <br id="projects" />
-      <br />
-      <br />
-      <h1 id="meus-projetos">
-        Meus projetos <img src="images/reporting.png" alt="" />
-      </h1>
-      <section class="third-box">
-        <!-- INÍCIO DO PROJETO 1 -->
-        <div class="project">
-          <img src="images/Foto_dashboard.jpg" alt="Projeto 1" />
-          <div class="project-info">
-            <h3>💸 Dashboard: Financeiro Pessoal</h3>
-            <p>
-              Controle suas finanças e visualize seus resultados de forma
-              interativa.
-            </p>
-            <!-- INÍCIO DO POP-UP -->
-            <div id="overlay_1" class="overlay_1" onclick="fecharPopup_1()">
-              <div class="popup" onclick="event.stopPropagation()">
-                <span class="fechar" onclick="fecharPopup_1()"
-                  ><img src="images/x.png"
-                /></span>
-                <h2>💸 Dashboard: Financeiro Pessoal</h2>
-                <p>
-                  Este dashboard foi desenvolvido no Power BI para facilitar o acompanhamento
-                  das finanças pessoais. Ele apresenta gráficos interativos que
-                  mostram receitas, despesas e saldo ao longo do tempo,
-                  permitindo uma análise detalhada da saúde financeira.
-                </p>
-                <br />
-                <p>
-                  <b>📌 Ferramentas utilizadas:</b>
-                  <img src="images/pbi.png" id="icon" />Power BI e
-                  <img src="images/excel.png" id="icon" />Excel.
-                </p>
-                <div class="area-buttons-popup">
-                  <button>
-                    <img src="images/pbi.png" id="icon" /> Abrir no Power BI
-                  </button>
-                  ou
-                  <button>
-                    <img src="images/powerpoint.png" id="icon" /> Abrir no Power
-                    Point
-                  </button>
-                  <button id="more-info-button">
-                    <img src="images/excel.png" id="icon" /> Ver planilha
-                  </button>
+      <section class="third-box" id="projects">
+        <h1 id="meus-projetos">
+          Meus projetos <img src="images/reporting.png" alt="" />
+        </h1>
+        <section class="projects-box">
+          <!-- INÍCIO DO PROJETO 1 -->
+          <div class="project">
+            <img src="images/Foto_dashboard.jpg" alt="Projeto 1" />
+            <div class="project-info">
+              <h3>💸 Dashboard: Financeiro Pessoal</h3>
+              <p>
+                Controle suas finanças e visualize seus resultados de forma
+                interativa.
+              </p>
+              <!-- INÍCIO DO POP-UP -->
+              <div id="overlay_1" class="overlay_1" onclick="fecharPopup_1()">
+                <div class="popup" onclick="event.stopPropagation()">
+                  <span class="fechar" onclick="fecharPopup_1()"
+                    ><img src="images/x.png"
+                  /></span>
+                  <div class="text-pop-up-field">
+                    <h2>💸 Dashboard: Financeiro Pessoal</h2>
+                    <p>
+                      Este dashboard foi desenvolvido no Power BI para facilitar
+                      o acompanhamento das finanças pessoais. Ele apresenta
+                      gráficos interativos que mostram receitas, despesas e
+                      saldo ao longo do tempo, permitindo uma análise detalhada
+                      da saúde financeira.
+                    </p>
+
+                    <p>
+                      <b>📌 Ferramentas utilizadas:</b>
+                      <img src="images/pbi.png" id="icon" />Power BI e
+                      <img src="images/excel.png" id="icon" />Excel.
+                    </p>
+                  </div>
+                  <div class="area-buttons-popup">
+                    <button id="several-options-project-button">
+                      <img src="images/pbi.png" id="icon" /> Abrir no Power BI
+                    </button>
+                    ou
+                    <button id="several-options-project-button">
+                      <img src="images/powerpoint.png" id="icon" /> Abrir no
+                      Power Point
+                    </button>
+                    <button id="several-options-project-button">
+                      <img src="images/excel.png" id="icon" /> Ver planilha
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- FINAL DO POP-UP -->
-            <div class="area-buttons">
-              <button onclick="abrirPopup_1()" id="more-info-button">
-                <img src="images/info.png" id="icon" /> 
-                Mais informações
-              </button>
-              <a href="download-files/Dashboard_Controle_Cursos.pptx">
-                <button id="download-or-go-to-project"><img src="images/cloud.png" id="icon" />Download</button></a
-              >
-            </div>
-          </div>
-        </div>
-        <!-- FINAL DO PROJETO 1 -->
-        <!-- INÍCIO DO PROJETO 2 -->
-        <div class="project">
-          <img src="images/Foto_dashboard_empresa.jpg" alt="Projeto 1" />
-          <div class="project-info">
-            <h3>📚 Dashboard: Setor de Cursos (Empresa)</h3>
-            <p>Monitoramento de cursos e desempenho do setor em tempo real.</p>
-            <!-- INÍCIO DO POP-UP -->
-            <div id="overlay_2" class="overlay_2" onclick="fecharPopup_2()">
-              <div class="popup" onclick="event.stopPropagation()">
-                <span class="fechar" onclick="fecharPopup_2()"
-                  ><img src="images/x.png"
-                /></span>
-                <h2>📚 Dashboard: Setor de Cursos (Empresa)</h2>
-                <p>
-                  Este dashboard foi criado para gerenciar cursos da empresa
-                  onde trabalhei. Ele exibe métricas como número de inscrições,
-                  faturamento por região e empresas que mais participam, permitindo decisões
-                  estratégicas baseadas em dados.
-                </p>
-                <br />
-                <p>
-                  <b>📌 Ferramentas utilizadas:</b>
-                  <img src="images/pbi.png" id="icon" />Power BI e
-                  <img src="images/excel.png" id="icon" />Excel.
-                </p>
-                <div class="area-buttons-popup">
-                  <button>
-                    <img src="images/pbi.png" id="icon" /> Abrir no Power BI
-                  </button>
-                  ou
-                  <button>
-                    <img src="images/powerpoint.png" id="icon" /> Abrir no Power
-                    Point
-                  </button>
-                  <button id="more-info-button">
-                    <img src="images/excel.png" id="icon" /> Ver planilha
-                  </button>
-                </div>
+              <!-- FINAL DO POP-UP -->
+              <div class="area-buttons">
+                <button onclick="abrirPopup_1()" id="more-info-button">
+                  <img src="images/info.png" id="icon" />
+                  Mais informações
+                </button>
+                <a href="download-files/Dashboard_Controle_Cursos.pptx">
+                  <button id="download-or-go-to-project">
+                    <img src="images/cloud.png" id="icon" />Download
+                  </button></a
+                >
               </div>
             </div>
-            <!-- FINAL DO POP-UP -->
-            <div class="area-buttons">
-              <button onclick="abrirPopup_2()" id="more-info-button">
-                <img src="images/info.png" id="icon" /> 
-                Mais informações
-              </button>
-              <a href="download-files/Dashboard_Controle_Cursos.pptx">
-                <button id="download-or-go-to-project"><img src="images/cloud.png" id="icon" />Download</button></a
-              >
-            </div>
           </div>
-        </div>
-        <!-- FINAL DO PROJETO 2 -->
-        <!-- INÍCIO DO PROJETO 3 -->
-        <div class="project">
-          <img src="images/Foto-projeto_AI_API.png" alt="Projeto 1" />
-          <div class="project-info">
-            <h3>🤖 Gerador de Imagens e Textos</h3>
-            <p>
-              Gere quaisquer imagens e textos automaticamente com inteligência
-              artificial.
-            </p>
-            <!-- INÍCIO DO POP-UP -->
-            <div id="overlay_3" class="overlay_3" onclick="fecharPopup_3()">
-              <div class="popup" onclick="event.stopPropagation()">
-                <span class="fechar" onclick="fecharPopup_3()"
-                  ><img src="images/x.png"
-                /></span>
-                <h2>🤖 Gerador de Imagens e Textos</h2>
-                <p>
-                  Esse projeto utiliza uma API de IA para gerar imagens e textos
-                  conforme o comando do usuário. A interface permite interações
-                  dinâmicas e a personalização do conteúdo gerado.
-                </p>
-                <br />
-                <p>
-                  <b>📌 Ferramentas utilizadas:</b>
-                  <img src="images/html.png" id="icon" />HTML,
-                  <img src="images/css.png" id="icon" />CSS,
-                  <img src="images/js.png" id="icon" />JavaScript e
-                  <img src="images/api.png" id="icon" />API de IA.
-                </p>
-                <div class="area-buttons-popup">
-                  <button>
-                    <img src="images/github.png" id="icon" /> Ver repositório
-                    (código)
-                  </button>
+          <!-- FINAL DO PROJETO 1 -->
+          <!-- INÍCIO DO PROJETO 2 -->
+          <div class="project">
+            <img src="images/Foto_dashboard_empresa.jpg" alt="Projeto 2" />
+            <div class="project-info">
+              <h3>📚 Dashboard: Setor de Cursos (Empresa)</h3>
+              <p>
+                Monitoramento de cursos e desempenho do setor em tempo real.
+              </p>
+              <!-- INÍCIO DO POP-UP -->
+              <div id="overlay_2" class="overlay_2" onclick="fecharPopup_2()">
+                <div class="popup" onclick="event.stopPropagation()">
+                  <span class="fechar" onclick="fecharPopup_2()"
+                    ><img src="images/x.png"
+                  /></span>
+                  <div class="text-pop-up-field">
+                    <h2>📚 Dashboard: Setor de Cursos (Empresa)</h2>
+                    <p>
+                      Este dashboard foi criado para gerenciar cursos da empresa
+                      onde trabalhei. Ele exibe métricas como número de
+                      inscrições, faturamento por região e empresas que mais
+                      participam, permitindo decisões estratégicas baseadas em
+                      dados.
+                    </p>
+
+                    <p>
+                      <b>📌 Ferramentas utilizadas:</b>
+                      <img src="images/pbi.png" id="icon" />Power BI e
+                      <img src="images/excel.png" id="icon" />Excel.
+                    </p>
+                  </div>
+                  <div class="area-buttons-popup">
+                    <button id="several-options-project-button">
+                      <img src="images/pbi.png" id="icon" /> Abrir no Power BI
+                    </button>
+                    ou
+                    <button id="several-options-project-button">
+                      <img src="images/powerpoint.png" id="icon" /> Abrir no
+                      Power Point
+                    </button>
+                    <button id="several-options-project-button">
+                      <img src="images/excel.png" id="icon" /> Ver planilha
+                    </button>
+                  </div>
                 </div>
               </div>
-            </div>
-            <!-- FINAL DO POP-UP -->
-            <div class="area-buttons">
-              <button onclick="abrirPopup_3()" id="more-info-button">
-                <img src="images/info.png" id="icon" /> 
-                Mais informações
-              </button>
-              <a href="https://rfaelvitor.github.io/Testing_an_API_v2/BOT_IMAGES/"
-              target="_blank">
-                <button id="download-or-go-to-project"><img src="images/link.png" id="icon" />Ir ao projeto</button></a
-              >
+              <!-- FINAL DO POP-UP -->
+              <div class="area-buttons">
+                <button onclick="abrirPopup_2()" id="more-info-button">
+                  <img src="images/info.png" id="icon" />
+                  Mais informações
+                </button>
+                <a href="download-files/Dashboard_Controle_Cursos.pptx">
+                  <button id="download-or-go-to-project">
+                    <img src="images/cloud.png" id="icon" />Download
+                  </button></a
+                >
+              </div>
             </div>
           </div>
-        </div>
-        <!-- FINAL DO PROJETO 3 -->
-        <!-- INÍCIO DO PROJETO 4 -->
-        <div class="project">
-          <img src="images/Foto_login-page.png" alt="Projeto 1" />
-          <div class="project-info">
-            <h3>🔑 Página de Login</h3>
-            <p>Interface simples e segura para login de usuários.</p>
-            <!-- INÍCIO DO POP-UP -->
+          <!-- FINAL DO PROJETO 2 -->
+          <!-- INÍCIO DO PROJETO 3 -->
+          <div class="project">
+            <img src="images/Foto-projeto_AI_API.png" alt="Projeto 3" />
+            <div class="project-info">
+              <h3>🤖 Gerador de Imagens e Textos</h3>
+              <p>
+                Gere quaisquer imagens e textos automaticamente com inteligência
+                artificial.
+              </p>
+              <!-- INÍCIO DO POP-UP -->
+              <div id="overlay_3" class="overlay_3" onclick="fecharPopup_3()">
+                <div class="popup" onclick="event.stopPropagation()">
+                  <span class="fechar" onclick="fecharPopup_3()"
+                    ><img src="images/x.png"
+                  /></span>
+                  <div class="text-pop-up-field">
+                    <h2>🤖 Gerador de Imagens e Textos</h2>
+                    <p>
+                      Esse projeto utiliza uma API de IA para gerar imagens e
+                      textos conforme o comando do usuário. A interface permite
+                      interações dinâmicas e a personalização do conteúdo
+                      gerado.
+                    </p>
+                    <p>
+                      <b>📌 Ferramentas utilizadas:</b>
+                      <img src="images/html.png" id="icon" />HTML,
+                      <img src="images/css.png" id="icon" />CSS,
+                      <img src="images/js.png" id="icon" />JavaScript e
+                      <img src="images/api.png" id="icon" />API de IA.
+                    </p>
+                  </div>
+                  <div class="area-buttons-popup">
+                    <button>
+                      <img src="images/github.png" id="icon" /> Ver repositório
+                      (código)
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- FINAL DO POP-UP -->
+              <div class="area-buttons">
+                <button onclick="abrirPopup_3()" id="more-info-button">
+                  <img src="images/info.png" id="icon" />
+                  Mais informações
+                </button>
+                <a
+                  href="https://rfaelvitor.github.io/Testing_an_API_v2/BOT_IMAGES/"
+                  target="_blank"
+                >
+                  <button id="download-or-go-to-project">
+                    <img src="images/link.png" id="icon" />Ir ao projeto
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- FINAL DO PROJETO 3 -->
+          <!-- INÍCIO DO PROJETO 4 -->
+          <div class="project">
+            <img src="images/Foto_login-page.png" alt="Projeto 4" />
+            <div class="project-info">
+              <h3>🔑 Página de Login</h3>
+              <p>Interface simples e segura para login de usuários.</p>
+              <!-- INÍCIO DO POP-UP -->
+              <div id="overlay_4" class="overlay_4" onclick="fecharPopup_4()">
+                <div class="popup" onclick="event.stopPropagation()">
+                  <span class="fechar" onclick="fecharPopup_4()"
+                    ><img src="images/x.png"
+                  /></span>
+                  <div class="text-pop-up-field">
+                    <h2>🔑 Página de Login</h2>
+                    <p>
+                      Este projeto consiste em uma página de login responsiva,
+                      projetada para garantir uma experiência intuitiva ao
+                      usuário. A estrutura foi desenvolvida com HTML e CSS,
+                      focando em um design limpo e funcional.
+                    </p>
+                    <p>
+                      <b>📌 Ferramentas utilizadas:</b>
+                      <img src="images/html.png" id="icon" />HTML e
+                      <img src="images/css.png" id="icon" />CSS.
+                    </p>
+                  </div>
+                  <div class="area-buttons-popup">
+                    <button>
+                      <img src="images/github.png" id="icon" /> Ver repositório
+                      (código)
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- FINAL DO POP-UP -->
+              <div class="area-buttons">
+                <button onclick="abrirPopup_4()" id="more-info-button">
+                  <img src="images/info.png" id="icon" />
+                  Mais informações
+                </button>
+                <a
+                  href="https://rfaelvitor.github.io/loginpage/"
+                  target="_blank"
+                >
+                  <button id="download-or-go-to-project">
+                    <img src="images/link.png" id="icon" />Ir ao projeto
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- FINAL DO PROJETO 4 -->
+          <!-- INÍCIO DO PROJETO 5 -->
+          <div class="project">
+            <img src="images/Foto-portfolio.png" alt="Projeto 5" />
+            <div class="project-info">
+              <h3>🌐 Portfólio Pessoal</h3>
+              <p>
+                Um espaço digital para apresentar quem sou e o que desenvolvo.
+              </p>
+              <!-- INÍCIO DO POP-UP -->
+              <div id="overlay_5" class="overlay_5" onclick="fecharPopup_5()">
+                <div class="popup" onclick="event.stopPropagation()">
+                  <span class="fechar" onclick="fecharPopup_5()"
+                    ><img src="images/x.png"
+                  /></span>
+                  <div class="text-pop-up-field">
+                    <h2>🌐 Portfólio Pessoal</h2>
+                    <p>
+                      Esse projeto reúne minhas informações, contato e projetos
+                      desenvolvidos. Foi criado com
+                      com foco em responsividade e estética. O objetivo é
+                      apresentar minhas habilidades de forma prática e
+                      centralizar meus trabalhos em um único espaço.
+                    </p>
+                    <p>
+                      <b>📌 Ferramentas utilizadas:</b>
+                      <img src="images/html.png" id="icon" />HTML,
+                      <img src="images/css.png" id="icon" />CSS e 
+                      <img src="images/js.png" id="icon" />JavaScript.
+                    </p>
+                  </div>
+                  <div class="area-buttons-popup">
+                    <button>
+                      <img src="images/github.png" id="icon" /> Ver repositório
+                      (código)
+                    </button>
+                  </div>
+                </div>
+              </div>
+              <!-- FINAL DO POP-UP -->
+              <div class="area-buttons">
+                <button onclick="abrirPopup_5()" id="more-info-button">
+                  <img src="images/info.png" id="icon" />
+                  Mais informações
+                </button>
+                <a
+                  href="https://rfaelvitor.github.io/Testing_an_API_v2/BOT_IMAGES/"
+                  target="_blank"
+                >
+                  <button id="download-or-go-to-project">
+                    <img src="images/link.png" id="icon" />Ir ao projeto
+                  </button></a
+                >
+              </div>
+            </div>
+          </div>
+          <!-- FINAL DO PROJETO 5 -->
+          <!-- INÍCIO DO PROJETO 6 -->
+          <div class="project">
+            <img src="images/loading-gif2.gif" alt="Projeto 6" />
+            <div class="project-info">
+              <h3>⏳ Em desenvolvimento...</h3>
+              <p>Projeto utilizando Java.</p>
+              <!--INÍCIO DO POP-UP-->
+              <!--
             <div id="overlay_4" class="overlay_4" onclick="fecharPopup_4()">
               <div class="popup" onclick="event.stopPropagation()">
                 <span class="fechar" onclick="fecharPopup_4()"
@@ -263,7 +392,7 @@
                   A estrutura foi desenvolvida com HTML e CSS, focando em um
                   design limpo e funcional.
                 </p>
-                <br />
+                
                 <p>
                   <b>📌 Ferramentas utilizadas:</b>
                   <img src="images/html.png" id="icon" />HTML e
@@ -277,7 +406,9 @@
                 </div>
               </div>
             </div>
-            <!-- FINAL DO POP-UP -->
+          -->
+              <!--FINAL DO POP-UP-->
+              <!--
             <div class="area-buttons">
               <button onclick="abrirPopup_4()" id="more-info-button">
                 <img src="images/info.png" id="icon" /> 
@@ -288,9 +419,10 @@
                 <button id="download-or-go-to-project"><img src="images/link.png" id="icon" />Ir ao projeto</button></a
               >
             </div>
+            --></div>
           </div>
-        </div>
-        <!-- FINAL DO PROJETO 4 -->
+          <!-- FINAL DO PROJETO 6 -->
+        </section>
       </section>
       <section class="fourth-box">
         <div class="fourth-box-left">
@@ -302,11 +434,15 @@
             method="POST"
             id="contacts"
           >
-            <h1>
-              Fale
-              <br />
-              comigo!<img id="airplane-img" src="images/airplane.png" alt="" />
-            </h1>
+            <div class="form-field">
+              <h1>
+                Fale
+                <span
+                  >comigo!
+                  <img id="airplane-img" src="images/airplane.png" alt=""
+                /></span>
+              </h1>
+            </div>
             <label>
               Seu e-mail:
               <input

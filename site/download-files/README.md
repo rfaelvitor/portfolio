@@ -42,7 +42,7 @@ Clique no link abaixo para acessar o projeto:
 [Ver o Projeto Gerador de Imagens e Textos](https://link-do-seu-projeto.com)
 
 ### 🖼️ Preview
-![Preview do Projeto de IA](https://raw.githubusercontent.com/rfaelvitor/portfolio/ae7f29ee3fa8940b5b786720275ba7568385543a/Foto_ia_preview.jpg)
+![Preview do Projeto de IA](https://raw.githubusercontent.com/rfaelvitor/portfolio/main/site/images/Foto-projeto_AI_API.png)
 
 ---
 
@@ -56,8 +56,24 @@ Acesse a página de login abaixo:
 [Ver o Projeto Página de Login](https://link-do-seu-projeto.com)
 
 ### 🖼️ Preview
-![Preview da Página de Login](https://raw.githubusercontent.com/rfaelvitor/portfolio/ae7f29ee3fa8940b5b786720275ba7568385543a/Foto_login_preview.jpg)
+![Preview da Página de Login](https://raw.githubusercontent.com/rfaelvitor/portfolio/main/site/images/Foto_login-page.png)
 
 ---
+
+## 🌐 Projeto 5: Portfólio Pessoal
+
+Este projeto é o meu **portfólio online**, desenvolvido em **HTML**, **CSS** e **JavaScript** puro. Ele reúne minhas informações, formas de contato e os projetos que já desenvolvi. O foco foi a **responsividade** e a **estética**, garantindo que o site funcione bem em diferentes dispositivos.  
+O objetivo principal é apresentar minhas habilidades de forma prática e centralizar meus trabalhos em um único espaço digital.
+
+### 🖥️ Visualização
+Clique no link abaixo para acessar o portfólio:
+
+[Ver o Projeto Portfólio Pessoal](https://link-do-seu-projeto.com)
+
+### 🖼️ Preview
+![Preview do Portfólio](https://raw.githubusercontent.com/rfaelvitor/portfolio/main/site/images/Foto-portfolio.png)
+
+---
+
 
 Esses são os projetos que desenvolvi, e estou sempre buscando melhorar minhas habilidades em desenvolvimento e análise de dados.

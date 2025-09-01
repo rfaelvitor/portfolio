@@ -70,6 +70,23 @@ header li {
   margin: auto;
   margin-right: 10px;
 }
+.tech-icons i{
+  display: inline-block;
+    font-size: 50px; /* muda o tamanho */
+  margin: 15px;
+  transition: transform 0.1s ease;
+}
+
+.tech-icons {
+  margin-bottom: 40px;
+}
+
+.tech-icons i:hover{
+  cursor: pointer;
+  transform: scale(1.5);
+}
+
+
 
 header a {
   list-style: none;
@@ -166,11 +183,9 @@ button:hover {
   cursor: pointer;
   background-color: var(--secundary);
   color: var(--main);
+  transform: scale(1.1);
 }
 
-/* button:hover {
-    transform: scale(1.05);
-} */
 
 a {
   text-decoration: none;
@@ -243,13 +258,19 @@ hr {
 
 .second-box-right > p {
   width: 90%;
-  margin: 10% 21% 6%;
+  margin: 5% 21% 6%;
 }
 
 .personal-pic {
   height: 400px;
   width: 400px;
   border-radius: 100%;
+  transition: transform 0.3s ease;
+}
+
+.personal-pic:hover{
+  cursor: pointer;
+  transform: scale(1.15);
 }
 
 #marca-de-verificacao {
@@ -483,8 +504,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  bottom: 0;
-  left: 0;
+  margin-top: 50px;
   height: 30%;
   width: 100%;
   /* background-color: red; */
@@ -534,7 +554,7 @@ footer {
   }
 
   .seta {
-    top: 14%;
+    top: 13%;
   }
 
   .first-box-left > p,
@@ -561,6 +581,7 @@ footer {
     width: 200px;
     border-radius: 100%;
   }
+  
   .second-box-right {
     margin: 0%;
     padding: 0%;
@@ -571,6 +592,21 @@ footer {
     margin-bottom: 20%;
     padding: 0%;
   }
+
+.tech-icons i{
+  font-size: 30px;
+  margin: 10px;
+}
+
+.tech-icons {
+  width: 90vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+}
+
 
   #meus-projetos {
     margin-bottom: 8%;

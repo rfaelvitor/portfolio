@@ -146,7 +146,8 @@ button {
   font-weight: bold;
 }
 
-.area-buttons {
+.area-buttons,
+.area-buttons-unique {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -542,7 +543,7 @@ footer {
     margin: 20px;
   }
 
-  .first-box-left > .area-buttons {
+  .first-box-left > .area-buttons, .area-buttons-unique {
     margin-top: 20%;
   }
 
@@ -583,6 +584,9 @@ footer {
     display: flex;
     justify-content: space-between;
   }
+
+  
+
 
   #more-info-button,
   #download-or-go-to-project {

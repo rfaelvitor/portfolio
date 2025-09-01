@@ -70,9 +70,9 @@ header li {
   margin: auto;
   margin-right: 10px;
 }
-.tech-icons i{
+.tech-icons i {
   display: inline-block;
-    font-size: 50px; /* muda o tamanho */
+  font-size: 50px; /* muda o tamanho */
   margin: 15px;
   transition: transform 0.1s ease;
 }
@@ -81,12 +81,9 @@ header li {
   margin-bottom: 40px;
 }
 
-.tech-icons i:hover{
-  cursor: pointer;
+.tech-icons i:hover {
   transform: scale(1.5);
 }
-
-
 
 header a {
   list-style: none;
@@ -175,17 +172,12 @@ button {
   border-color: white;
 }
 
-#more-info-button:hover {
-  background-color: var(--secundary);
-}
-
 button:hover {
   cursor: pointer;
   background-color: var(--secundary);
   color: var(--main);
   transform: scale(1.1);
 }
-
 
 a {
   text-decoration: none;
@@ -268,8 +260,7 @@ hr {
   transition: transform 0.3s ease;
 }
 
-.personal-pic:hover{
-  cursor: pointer;
+.personal-pic:hover {
   transform: scale(1.15);
 }
 
@@ -563,7 +554,8 @@ footer {
     margin: 20px;
   }
 
-  .first-box-left > .area-buttons, .area-buttons-unique {
+  .first-box-left > .area-buttons,
+  .area-buttons-unique {
     margin-top: 20%;
   }
 
@@ -581,7 +573,7 @@ footer {
     width: 200px;
     border-radius: 100%;
   }
-  
+
   .second-box-right {
     margin: 0%;
     padding: 0%;
@@ -593,20 +585,19 @@ footer {
     padding: 0%;
   }
 
-.tech-icons i{
-  font-size: 30px;
-  margin: 10px;
-}
+  .tech-icons i {
+    font-size: 30px;
+    margin: 10px;
+  }
 
-.tech-icons {
-  width: 90vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  margin-bottom: 20px;
-}
-
+  .tech-icons {
+    width: 90vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+  }
 
   #meus-projetos {
     margin-bottom: 8%;
@@ -620,9 +611,6 @@ footer {
     display: flex;
     justify-content: space-between;
   }
-
-  
-
 
   #more-info-button,
   #download-or-go-to-project {
@@ -731,5 +719,11 @@ footer {
   .popup > p > img:first-of-type {
     margin-top: 50px;
   }
-}
 
+  button:hover {
+    transform: none;
+    background-color: unset;
+    color: unset;
+    cursor: default;
+  }
+}

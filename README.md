@@ -13,7 +13,7 @@ O design é **100% original e feito do zero**, pensado para ser moderno, respons
 - Design **único e autoral**, planejado para ser limpo e elegante.
 - Trabalhoso e desafiador de criar, serviu como um ótimo aprendizado em **front-end**.
 
-## 📎 Acesse o site
-👉 [Clique aqui para ver o portfólio online](https://rfaelvitor.github.io/portfolio/site/){:target="_blank"}
+## 📎 Acesse o site  
+👉 <a href="https://rfaelvitor.github.io/portfolio/site/" target="_blank">Clique aqui para ver o portfólio online</a>
 
 ---

@@ -1,13 +1,19 @@
-# Portfolio 🚀
+# 🌐 Portfólio Pessoal
 
-Meu site pessoal para exibir meus projetos e informações sobre mim.  
+Este é o meu site de portfólio, criado para apresentar meus projetos e minha jornada em programação.  
+O design é **100% original e feito do zero**, pensado para ser moderno, responsivo e de fácil navegação.
 
-## Funcionalidades
-- Página sobre mim
-- Lista de projetos
-- Contato
-- Responsivo para desktop e mobile
+## 🚀 Tecnologias usadas
+- **HTML5**
+- **CSS3**
+- **JavaScript** → usado para efeitos interativos, como pop-ups e animações.
 
-## Tecnologias
-- HTML, CSS, JavaScript
-- GitHub Pages para hospedagem
+## 🔥 Destaques
+- Totalmente **responsivo** (funciona bem em PC, tablet e celular).
+- Design **único e autoral**, planejado para ser limpo e elegante.
+- Trabalhoso e desafiador de criar, serviu como um ótimo aprendizado em **front-end**.
+
+## 📎 Acesse o site
+👉 [Clique aqui para ver o portfólio online](https://rfaelvitor.github.io/portfolio/)
+
+---

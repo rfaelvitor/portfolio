@@ -172,7 +172,8 @@ button {
   border-color: white;
 }
 
-button:hover {
+button:hover,
+#more-info-button:hover {
   cursor: pointer;
   background-color: var(--secundary);
   color: var(--main);
